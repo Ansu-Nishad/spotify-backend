@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
-    "dev": "nodemon --watch src --ext ts --exec \"npm run build && node dist/server.js\""
+    "dev": "nodemon --watch src --ext ts --exec \"npm run build && node -r dotenv/config dist/server.js\""
   },
   "keywords": [],
   "author": "",
